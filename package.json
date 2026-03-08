@@ -1,0 +1,50 @@
+{
+  "name": "jeeja-fashion-smart-showroom",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "webrtc": "node server/webrtc-server.js",
+    "setup-webrtc": "node scripts/setup-webrtc.js",
+    "dev:full": "concurrently \"npm run webrtc\" \"npm run dev\"",
+    "test:cameras": "node scripts/test-cameras.js",
+    "test:setup": "node scripts/test-setup.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "chart.js": "^4.4.1",
+    "clsx": "^2.1.0",
+    "concurrently": "^8.2.2",
+    "date-fns": "^3.3.1",
+    "express": "^4.18.2",
+    "hls.js": "^1.6.15",
+    "jsonwebtoken": "^9.0.2",
+    "lucide-react": "^0.344.0",
+    "mongoose": "^8.2.0",
+    "next": "14.1.0",
+    "react": "^18",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^18",
+    "socket.io": "^4.7.4",
+    "socket.io-client": "^4.7.4",
+    "tailwind-merge": "^2.2.1",
+    "ws": "^8.16.0"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/jsonwebtoken": "^9.0.5",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/ws": "^8.5.10",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.0",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5"
+  }
+}
